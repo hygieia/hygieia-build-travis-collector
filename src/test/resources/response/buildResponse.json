@@ -1,0 +1,1813 @@
+{
+  "@warnings": [
+    {
+      "@type": "warning",
+      "message": "query parameter finished_at< not safelisted, ignored",
+      "warning_type": "ignored_parameter",
+      "parameter": "finished_at<"
+    }
+  ],
+  "@type": "builds",
+  "@href": "/repo/6642098/builds?branch.name=master&event_type=push&include=build.commit&finished_at%3C=2019-03-21T15:28:40Z",
+  "@representation": "standard",
+  "@pagination": {
+    "limit": 25,
+    "offset": 0,
+    "count": 25,
+    "is_first": true,
+    "is_last": true,
+    "next": {
+      "@href": "/repo/6642098/builds?branch.name=master&event_type=push&finished_at%3C=2019-03-21T15%3A28%3A40Z&include=build.commit&limit=25&offset=25",
+      "offset": 25,
+      "limit": 25
+    },
+    "prev": null,
+    "first": {
+      "@href": "/repo/6642098/builds?branch.name=master&event_type=push&include=build.commit&finished_at%3C=2019-03-21T15:28:40Z",
+      "offset": 0,
+      "limit": 25
+    },
+    "last": {
+      "@href": "/repo/6642098/builds?branch.name=master&event_type=push&finished_at%3C=2019-03-21T15%3A28%3A40Z&include=build.commit&limit=25&offset=75",
+      "offset": 75,
+      "limit": 25
+    }
+  },
+  "builds": [
+    {
+      "@type": "build",
+      "@href": "/build/105303579",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 105303579,
+      "number": "516",
+      "state": "passed",
+      "duration": 1190,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-21T15:08:50Z",
+      "finished_at": "2019-03-21T15:28:40Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 182950923,
+        "sha": "26692e14a88729ff47669154c95d24f8a0073fc9",
+        "ref": "refs/heads/master",
+        "message": "Fixes issue for publishing tests with post build step (#2796)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/e14c2309cee9...26692e14a887",
+        "committed_at": "2019-03-21T15:08:19Z",
+        "committer": {
+          "name": "GitHub",
+          "avatar_url": "https://0.gravatar.com/avatar/9181eb84f9c35729a3bad740fb7f9d93"
+        },
+        "author": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/186717593",
+          "@representation": "minimal",
+          "id": 186717593
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-03-21T15:28:40.942Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/104786607",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 104786607,
+      "number": "510",
+      "state": "passed",
+      "duration": 1018,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-18T13:05:03Z",
+      "finished_at": "2019-03-18T13:22:01Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 181698730,
+        "sha": "e14c2309cee96843a5ce936647fc7ccb2ff66891",
+        "ref": "refs/heads/master",
+        "message": "enabled work github under proxy server (#2778)\n\n* method to set proxy\r\n\r\nthis make GitHub work under proxy server\r\n\r\n* getters and setters for proxy\r\n\r\nset proxy in properties file\r\nex: github.proxy=....\r\n    github.proxyPort=....\r\n\r\n* setting proxy to resttemplate\r\n\r\nit make work github under proxy server\r\n\r\n* removed unnessary log\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* system proxy setup\r\n\r\n* back\r\n\r\n* Update GitHubCollectorTask.java\r\n\r\n* Update GitHubSettings.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* optional proxy password and user added\r\n\r\n* Update GitHubSettings.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update RestOperationsSupplier.java\r\n\r\n* Update GitHubSettings.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update GitHubSettings.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update GitHubCollectorTask.java\r\n\r\n* Delete DefaultGitHubClient.java\r\n\r\n* Add files via upload\r\n\r\n* Delete DefaultGitHubClient.java\r\n\r\n* Create DefaultGitHubClient.java\r\n\r\n* Update GitHubCollectorTask.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* removed new line\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Update DefaultGitHubClient.java\r\n\r\n* Delete DefaultGitHubClient.java\r\n\r\n* Add files via upload",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/541e2e5d23e9...e14c2309cee9",
+        "committed_at": "2019-03-18T13:04:25Z",
+        "committer": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        },
+        "author": {
+          "name": "userAccount4",
+          "avatar_url": "https://0.gravatar.com/avatar/0421633760e5b1437c022af616db6692"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/185647565",
+          "@representation": "minimal",
+          "id": 185647565
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-03-18T13:22:01.296Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103963751",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103963751,
+      "number": "474",
+      "state": "passed",
+      "duration": 992,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-11T19:28:25Z",
+      "finished_at": "2019-03-11T19:44:57Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 179695783,
+        "sha": "541e2e5d23e9831419af70e9071a6be60b4e1f21",
+        "ref": "refs/heads/master",
+        "message": "updated the gpg keys to the new value (#2784)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/943caf9180c0...541e2e5d23e9",
+        "committed_at": "2019-03-11T19:27:24Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userAccount3",
+          "avatar_url": "https://0.gravatar.com/avatar/aa189dbc4b61de5bef175e5750da179e"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/183952149",
+          "@representation": "minimal",
+          "id": 183952149
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-03-11T19:44:57.189Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103943928",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103943928,
+      "number": "471",
+      "state": "passed",
+      "duration": 1003,
+      "event_type": "push",
+      "previous_state": "failed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-11T18:43:12Z",
+      "finished_at": "2019-03-11T18:59:55Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 179647428,
+        "sha": "943caf9180c03ed330b62aa8d485b9091df1e519",
+        "ref": "refs/heads/master",
+        "message": "Audit API Static Security Analysis Enhancement (#2752)\n\n* ssa audit update\r\n\r\n* audit ssa status update\r\n\r\n* ssa audit check with disposition\r\n\r\n* disposition changes reverted back\r\n\r\n* security audit evaluator unit test added\r\n\r\n* code formatting",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/ae661508aeb6...943caf9180c0",
+        "committed_at": "2019-03-11T17:06:59Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userTest3",
+          "avatar_url": "https://0.gravatar.com/avatar/0f75cff7e30df396cfacf92afb2849c8"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/183908550",
+          "@representation": "minimal",
+          "id": 183908550
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-03-11T18:59:55.122Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103708119",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103708119,
+      "number": "466",
+      "state": "failed",
+      "duration": 617,
+      "event_type": "push",
+      "previous_state": "failed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-08T16:43:14Z",
+      "finished_at": "2019-03-08T16:53:31Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 179077578,
+        "sha": "ae661508aeb66b1aa0b022e90f69d2a59958cdce",
+        "ref": "refs/heads/master",
+        "message": "Resolves Travis CI mvn deploy of non-snapshot  (#2781)\n\n* Fixing the permissions\r\n\r\n* Adding more fixes for the travis snapshot releasing\r\n\r\n* Bump minor version\r\n\r\n* Update all versions to minor version bump and new SNAPSHOT version",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/cb95ffdb5d0c...ae661508aeb6",
+        "committed_at": "2019-03-08T16:42:18Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userAccount2",
+          "avatar_url": "https://0.gravatar.com/avatar/4421901fa5e4b29790a9da48dc22c013"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/183431203",
+          "@representation": "minimal",
+          "id": 183431203
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-03-08T16:53:31.656Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103582208",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103582208,
+      "number": "462",
+      "state": "failed",
+      "duration": 541,
+      "event_type": "push",
+      "previous_state": "failed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-07T19:22:25Z",
+      "finished_at": "2019-03-07T19:31:26Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 178765173,
+        "sha": "cb95ffdb5d0c05b15caf9db5298b2ac22277f883",
+        "ref": "refs/heads/master",
+        "message": "Fixing the permissions (#2780)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/af03706dd85f...cb95ffdb5d0c",
+        "committed_at": "2019-03-07T18:55:17Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userAccount2",
+          "avatar_url": "https://0.gravatar.com/avatar/4421901fa5e4b29790a9da48dc22c013"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/183172010",
+          "@representation": "minimal",
+          "id": 183172010
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-03-07T19:31:26.573Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103572939",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103572939,
+      "number": "460",
+      "state": "failed",
+      "duration": 670,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-07T17:48:03Z",
+      "finished_at": "2019-03-07T17:59:13Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 178743062,
+        "sha": "af03706dd85f5f9bea5a3b1728d4301b0f95b299",
+        "ref": "refs/heads/master",
+        "message": "Set Travis up to build snapshots on Master merges (#2777)\n\n* Create deploy-snapshot.sh\r\n\r\n* Update .travis.yml",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/278e1bdd8c36...af03706dd85f",
+        "committed_at": "2019-03-07T17:47:29Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "userAccount2",
+          "avatar_url": "https://0.gravatar.com/avatar/4421901fa5e4b29790a9da48dc22c013"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/183151988",
+          "@representation": "minimal",
+          "id": 183151988
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-03-07T17:59:13.975Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103558025",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103558025,
+      "number": "453",
+      "state": "passed",
+      "duration": 529,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-07T16:13:58Z",
+      "finished_at": "2019-03-07T16:22:47Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 178706901,
+        "sha": "278e1bdd8c36b20816a3594b431b742ab6e5ef1d",
+        "ref": "refs/heads/master",
+        "message": "Adds Epic Id and Story Id to properties file (#2770)\n\n* Adds Epic Id and Story Id to properties file\r\n\r\n* Fix for Test cases",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/22502c244131...278e1bdd8c36",
+        "committed_at": "2019-03-07T16:13:14Z",
+        "committer": {
+          "name": "GitHub",
+          "avatar_url": "https://0.gravatar.com/avatar/9181eb84f9c35729a3bad740fb7f9d93"
+        },
+        "author": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/183122332",
+          "@representation": "minimal",
+          "id": 183122332
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-03-07T16:22:47.455Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103440764",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103440764,
+      "number": "450",
+      "state": "passed",
+      "duration": 565,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-06T21:47:32Z",
+      "finished_at": "2019-03-06T21:56:57Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 178413298,
+        "sha": "22502c2441318acdf21e435fa2701d3ce4d35dba",
+        "ref": "refs/heads/master",
+        "message": "fix for moment and bootstrap package versions (#2771)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/2a7048a0deee...22502c244131",
+        "committed_at": "2019-03-06T21:46:52Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userAccount1",
+          "avatar_url": "https://0.gravatar.com/avatar/5f271b96cd3370caed8cb46c69238275"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/182887707",
+          "@representation": "minimal",
+          "id": 182887707
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-03-06T21:56:57.439Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103275199",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103275199,
+      "number": "444",
+      "state": "passed",
+      "duration": 535,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-05T21:42:09Z",
+      "finished_at": "2019-03-05T21:51:04Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 178002396,
+        "sha": "2a7048a0deee264eb7996d5ac523330d86c1e3d0",
+        "ref": "refs/heads/master",
+        "message": "Fix issue with remote create (#2769)\n\nValidated user list was not being passed in\r\nto the create function",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/0cf718265800...2a7048a0deee",
+        "committed_at": "2019-03-05T21:41:26Z",
+        "committer": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        },
+        "author": {
+          "name": "userTest4",
+          "avatar_url": "https://0.gravatar.com/avatar/c0f251753d0dd2ad1376bbc96ae1f8e5"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/182550111",
+          "@representation": "minimal",
+          "id": 182550111
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-03-05T21:51:04.448Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/103248545",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 103248545,
+      "number": "441",
+      "state": "passed",
+      "duration": 534,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-05T18:13:49Z",
+      "finished_at": "2019-03-05T18:22:43Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 177934412,
+        "sha": "0cf7182658002cdf369ab0c5198aa9fcaea273bb",
+        "ref": "refs/heads/master",
+        "message": "Added restriction to push time (#2760)\n\nIssue : stageDurations object contain extra timestamps (durations) due to which the average time of stages are not correct or the value is too high.\r\n\r\nResolution: Added restriction to add timeInCurrentStage duration only if next stage doesn’t have any commits. Otherwise, the stage duration object will have additional values – time taken by commits to move to next stage + the age of the commit (time spent by commit in particular stage). \r\n\r\n\r\nThe fix should resolve some open issues (closed without resolution):\r\nhttps://github.com/Hygieia/Hygieia/issues/1875\r\nhttps://github.com/Hygieia/Hygieia/issues/2480\r\nhttps://github.com/Hygieia/Hygieia/issues/1298",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/f026c80d9576...0cf718265800",
+        "committed_at": "2019-03-05T18:13:15Z",
+        "committer": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        },
+        "author": {
+          "name": "JohnSmith",
+          "avatar_url": "https://0.gravatar.com/avatar/9684b80f292028dd5db940e227f9a65a"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/182493291",
+          "@representation": "minimal",
+          "id": 182493291
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-03-05T18:22:43.166Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/102867574",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 102867574,
+      "number": "437",
+      "state": "passed",
+      "duration": 514,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-03-01T20:25:17Z",
+      "finished_at": "2019-03-01T20:33:51Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 176985136,
+        "sha": "f026c80d9576edb28b7b9a6a2a2a847fd1d6b0eb",
+        "ref": "refs/heads/master",
+        "message": "Fix issue when trying to publish test results (#2764)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/176a9ee51ca1...f026c80d9576",
+        "committed_at": "2019-03-01T20:24:44Z",
+        "committer": {
+          "name": "GitHub",
+          "avatar_url": "https://0.gravatar.com/avatar/9181eb84f9c35729a3bad740fb7f9d93"
+        },
+        "author": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/181710567",
+          "@representation": "minimal",
+          "id": 181710567
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-03-01T20:33:51.658Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/102725385",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 102725385,
+      "number": "433",
+      "state": "passed",
+      "duration": 551,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-28T21:05:37Z",
+      "finished_at": "2019-02-28T21:14:48Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 176632442,
+        "sha": "176a9ee51ca1e6484bd68a84cbd7044cfeec8601",
+        "ref": "refs/heads/master",
+        "message": "check for empty (#2759)\n\ncant run .every on undefined- check if defined before calling",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/165d72cd38dd...176a9ee51ca1",
+        "committed_at": "2019-02-28T21:04:44Z",
+        "committer": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        },
+        "author": {
+          "name": "userTest1",
+          "avatar_url": "https://0.gravatar.com/avatar/19ce9d2b6ce7bd4a8f2f100fa41ab584"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/181416927",
+          "@representation": "minimal",
+          "id": 181416927
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-02-28T21:14:48.078Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/102542992",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 102542992,
+      "number": "429",
+      "state": "passed",
+      "duration": 589,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-27T18:26:03Z",
+      "finished_at": "2019-02-27T18:35:52Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 176162766,
+        "sha": "165d72cd38dd19dfa5d3404feae095ffd41bee9c",
+        "ref": "refs/heads/master",
+        "message": "No data bug performance (#2747)\n\n* individual views- no data\r\n\r\n* fix no data found directive issue\r\n\r\n* update directive\r\n\r\nUpdate the directive to add the \"No data\" message as a sibiling so that you can properly search for the element/display it despite things being hidden/not hidden in the inner html\r\n\r\n* update hide empty params\r\n\r\nUpdate hide empty params to look for more specific/accurate data\r\n\r\n* update formatting for test tab\r\n\r\nadd no data found to appear under the headers for each of the test groups\r\n\r\nfix formatting of test display to align better\r\n\r\nUpdate formatting to only include the scroll div if there are enough items to require a scroll (fixes large gap between sections)\r\n\r\n* fix indentation",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/974b7f1c8135...165d72cd38dd",
+        "committed_at": "2019-02-27T18:25:30Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userTest1",
+          "avatar_url": "https://0.gravatar.com/avatar/19ce9d2b6ce7bd4a8f2f100fa41ab584"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/181043047",
+          "@representation": "minimal",
+          "id": 181043047
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-02-27T18:35:52.839Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/102227665",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 102227665,
+      "number": "421",
+      "state": "passed",
+      "duration": 532,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-25T20:51:59Z",
+      "finished_at": "2019-02-25T21:00:51Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 175376204,
+        "sha": "974b7f1c81353eed2b3fc00c6c7061f39e94b9fa",
+        "ref": "refs/heads/master",
+        "message": "NFRR enhancements in library policy and SSA audit results (#2745)\n\n* Fixes for LibraryPolicy and SSA\r\n\r\n* nfrr library policy and security audit enhancements",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/d5728e61637b...974b7f1c8135",
+        "committed_at": "2019-02-25T20:51:27Z",
+        "committer": {
+          "name": "user Test5",
+          "avatar_url": "https://0.gravatar.com/avatar/b3644e863b0238bfe8263e4d00fca6fb"
+        },
+        "author": {
+          "name": "userTest3",
+          "avatar_url": "https://0.gravatar.com/avatar/0f75cff7e30df396cfacf92afb2849c8"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/180404143",
+          "@representation": "minimal",
+          "id": 180404143
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088384",
+        "@representation": "minimal",
+        "id": 1088384,
+        "login": "kumarvarun1252"
+      },
+      "updated_at": "2019-02-25T21:00:51.398Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101878428",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101878428,
+      "number": "417",
+      "state": "passed",
+      "duration": 899,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-22T02:07:36Z",
+      "finished_at": "2019-02-22T02:22:35Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 174515371,
+        "sha": "d5728e61637b9b47479048a253c5bd7b5a399fa0",
+        "ref": "refs/heads/master",
+        "message": "Adding in support for multiple owners  (#2722)\n\n* Allow remote API to take in multiple owners\r\n\r\nDelegated null check to the API where it will\r\ncheck to see if both the owner and owners field\r\nis empty.\r\n\r\n* Combine owner and owners request into one list\r\n\r\n* Overwrite owners field with new entries\r\n\r\n* Validate each owner being added\r\n\r\n* Add owners to existing owner list in the dashboard\r\n\r\n* Make sure that new owners list is unique\r\n\r\n* Pass in validated new owners list instead of recomputing it\r\n\r\n* Update dashboard constructors to take in List<Owner>\r\n\r\n* Add testcase for multiple owners\r\n\r\n* Added test for multiple owners and owner field\r\n\r\nTakes into account repeats, within the owner and\r\nowners field.  Updates TestUtil to load in multiple\r\nusers.\r\n\r\n* Update DashboardService to call isUserValid\r\n\r\nThis allows the dashboard to save new users\r\nif the current list has someone that has not\r\nlogged in before.\r\n\r\n* Update owners check and owner creation\r\n\r\n* Skip over invalid users during remote user validation\r\n\r\nIf the entire owners list is empty, the request is considered\r\ninvalid.",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/88689f03cf78...d5728e61637b",
+        "committed_at": "2019-02-22T02:07:07Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "userTest4",
+          "avatar_url": "https://0.gravatar.com/avatar/c0f251753d0dd2ad1376bbc96ae1f8e5"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/179705731",
+          "@representation": "minimal",
+          "id": 179705731
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-02-22T02:22:35.960Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101846465",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101846465,
+      "number": "414",
+      "state": "passed",
+      "duration": 609,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-21T20:51:51Z",
+      "finished_at": "2019-02-21T21:02:00Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 174437061,
+        "sha": "88689f03cf781be9947cc09190b75ce00069279d",
+        "ref": "refs/heads/master",
+        "message": "No data bug fix (#2742)\n\n* individual views- no data\r\n\r\n* fix no data found directive issue\r\n\r\n* add if to protect against null",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/66df13cbd7fa...88689f03cf78",
+        "committed_at": "2019-02-21T20:49:47Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userTest1",
+          "avatar_url": "https://0.gravatar.com/avatar/19ce9d2b6ce7bd4a8f2f100fa41ab584"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/179635143",
+          "@representation": "minimal",
+          "id": 179635143
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-02-21T21:02:00.559Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101639277",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101639277,
+      "number": "408",
+      "state": "passed",
+      "duration": 769,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-20T15:56:38Z",
+      "finished_at": "2019-02-20T16:09:27Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 173921634,
+        "sha": "66df13cbd7fabc05ca6c78701f760462e7a41987",
+        "ref": "refs/heads/master",
+        "message": "GenericCollectorItem now gets processed everytime it is triggered. (#2740)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/19693903a184...66df13cbd7fa",
+        "committed_at": "2019-02-20T15:56:07Z",
+        "committer": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        },
+        "author": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/179209799",
+          "@representation": "minimal",
+          "id": 179209799
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088394",
+        "@representation": "minimal",
+        "id": 1088394,
+        "login": "userTest2"
+      },
+      "updated_at": "2019-02-20T16:09:28.004Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101544127",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101544127,
+      "number": "405",
+      "state": "passed",
+      "duration": 541,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-20T00:39:46Z",
+      "finished_at": "2019-02-20T00:48:47Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 173681742,
+        "sha": "19693903a18469dbbdc01023542cec74d7dc8ad7",
+        "ref": "refs/heads/master",
+        "message": "Fix for Null Pointer when pre existing collector items board does not exist (#2739)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/bc2e25310958...19693903a184",
+        "committed_at": "2019-02-20T00:39:04Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/179021903",
+          "@representation": "minimal",
+          "id": 179021903
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-02-20T00:48:48.045Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101542985",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101542985,
+      "number": "402",
+      "state": "passed",
+      "duration": 547,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-20T00:24:29Z",
+      "finished_at": "2019-02-20T00:33:36Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 173678853,
+        "sha": "bc2e253109586db5def8af85e630766d44eee586",
+        "ref": "refs/heads/master",
+        "message": "collect traceability details from audit response (#2738)",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/801079a17a13...bc2e25310958",
+        "committed_at": "2019-02-20T00:23:57Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "userTest3",
+          "avatar_url": "https://0.gravatar.com/avatar/0f75cff7e30df396cfacf92afb2849c8"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/179019433",
+          "@representation": "minimal",
+          "id": 179019433
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-02-20T00:33:36.651Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101151589",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101151589,
+      "number": "395",
+      "state": "passed",
+      "duration": 506,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-15T21:38:04Z",
+      "finished_at": "2019-02-15T21:46:30Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 172709530,
+        "sha": "801079a17a1315e63f6b364f380460b09c6f195e",
+        "ref": "refs/heads/master",
+        "message": "Jira Feature Collector Rewrite (#2733)\n\n* Rewrite of Jira collector. Solely using JIRA APIs. Auto detect team mode vs board mode. Fetch issues project by project and fetch only delta.\r\n\r\n* Update source link in pom.\r\n\r\n* Added abiloity to collect issues by project or board - determined by Mode: \"Tempo Team\" or \"Board\"\r\n\r\n* Overwrite team id, name when collecting issues using boards.\r\n\r\n* In case of failure to collect features, log error, keep going.\r\n\r\n* For issues, fetch only selected fields. Catch JIRA server error and keep going.\r\n\r\n* In case of failure to collect features, log error, keep going.\r\n\r\n* SprintFormatter - empty date handler.\r\n\r\n* Resolved PMD issues. Major change: Attach boards to projects. Also, ability to skip collecting boards/projecs all the time.\r\n\r\n* New local model.\r\n\r\n* Had to add lastRefreshtTime to collector... and update.\r\n\r\n* Reverting back some. Support user selected setting \"feature.jiraBoardAsTeam\". Cleaned up pom. Added more logging.\r\n\r\n* Change Team Selection to Team or Board selection based on collector mode.\r\n\r\n* Logging updates.\r\n\r\n* Added storyPointsFieldName in the API call.\r\n\r\n* Made private methods protected to allow unit test.\r\n\r\n* Correct JQL formatting for multiple issueType.\r\n\r\n* Testing first cut\r\n\r\n* unused imports removed\r\n\r\n* Attempt to update Epic status.\r\n\r\n* More Tests\r\n\r\n* Clean up deleted issues during full refresh. Corrected some paging logic.\r\n\r\n* Changed detecting mode.\r\n\r\n* Revert \"Changed detecting mode.\"\r\n\r\nThis reverts commit f18299147bff5301a1b95a4cab892c49539f5e71.\r\n\r\n* Changed UI to show \"done\" epics. Corrected some collection logic, field mapping.\r\n\r\n* updating tests\r\n\r\n* Handling deleting teams/boards/projects when they are deleted in Jira.\r\n\r\n* pmd corrections.\r\n\r\n* Fix for case where boards may not be updated\r\n\r\n* fix for API response end\r\n\r\n* Unit Testing\r\n\r\n* clean up\r\n\r\n* Fix for not pulling all the boards\r\n\r\n* fix for paging\r\n\r\n* Adding single quotes to issues\r\n\r\n* Adding feature limit for boards\r\n\r\n* Adding feature limit for boards\r\n\r\n* Changing value to force push change\r\n\r\n* Update to add in flag for only updating boards with enable collector items\r\n\r\n* Fix for 1 feature tied to many boards\r\n\r\n* Author removal\r\n\r\n* Updating unit tests and removing console.log\r\n\r\n* remove imports",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/181eb2279f68...801079a17a13",
+        "committed_at": "2019-02-15T21:37:25Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "userTest2",
+          "avatar_url": "https://0.gravatar.com/avatar/0ff4870a07f72737289a513f4565e614"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/178226199",
+          "@representation": "minimal",
+          "id": 178226199
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-02-15T21:46:30.165Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/101137000",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 101137000,
+      "number": "391",
+      "state": "passed",
+      "duration": 522,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-15T19:36:35Z",
+      "finished_at": "2019-02-15T19:45:17Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 172674178,
+        "sha": "181eb2279f68a0c8ef04e70a59564b09ec4aed5e",
+        "ref": "refs/heads/master",
+        "message": "Bower to npm migration (#2732)\n\n* Bower to npm migration\r\n\r\n* Bower to npm migration\r\n\r\n* Bower to npm migration",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/40c0d261b825...181eb2279f68",
+        "committed_at": "2019-02-15T19:35:58Z",
+        "committer": {
+          "name": "Tapabrata \"Topo\" Pal",
+          "avatar_url": "https://0.gravatar.com/avatar/ac1477596e4e5e4bdcac23c4e33dd2bd"
+        },
+        "author": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/178194254",
+          "@representation": "minimal",
+          "id": 178194254
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088383",
+        "@representation": "minimal",
+        "id": 1088383,
+        "login": "tabladrum"
+      },
+      "updated_at": "2019-02-15T19:45:17.834Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/100102743",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 100102743,
+      "number": "376",
+      "state": "passed",
+      "duration": 735,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-07T15:30:21Z",
+      "finished_at": "2019-02-07T15:42:36Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 170096837,
+        "sha": "40c0d261b825c1ce7e638fad3ec23e8470848c5d",
+        "ref": "refs/heads/master",
+        "message": "Quality widget loop base version (#2706)\n\n* added buttons and some logic for switching between widgets\r\n\r\n* working loop and next for quality widget\r\n\r\n* update icons\r\n\r\n* more formatting fixes\r\n\r\nchange color based on play or pause\r\n\r\n* make hover the same\r\n\r\n* make css common (less repetition)\r\n\r\n* update feature widget\r\n\r\nupdate feature widget to include new stylings from quality widget\r\n\r\n* adding buttons to main tabs for code analysis\r\n\r\n* cycle performance and quality tabs\r\n\r\n* fixed formatting\r\n\r\n* remove outer loop\r\n\r\n* merge conflict fix\r\n\r\n* Logo updateÏ\r\n\r\n* fix alignment of buttons\r\n\r\n* comments\r\n\r\n* remove interval",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/09d42fce613f...40c0d261b825",
+        "committed_at": "2019-02-07T15:29:43Z",
+        "committer": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        },
+        "author": {
+          "name": "userTest1",
+          "avatar_url": "https://0.gravatar.com/avatar/19ce9d2b6ce7bd4a8f2f100fa41ab584"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/176070878",
+          "@representation": "minimal",
+          "id": 176070878
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088390",
+        "@representation": "minimal",
+        "id": 1088390,
+        "login": "userTest"
+      },
+      "updated_at": "2019-02-07T15:42:36.887Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/100099943",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 100099943,
+      "number": "373",
+      "state": "passed",
+      "duration": 564,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-07T15:14:44Z",
+      "finished_at": "2019-02-07T15:24:08Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 170090066,
+        "sha": "09d42fce613f683867f864227e82d7e2f08b4672",
+        "ref": "refs/heads/master",
+        "message": "Audit- Dashboard review - Added block directCommitFailedValidation (#2718)\n\n* Add new status - DIRECT_COMMIT_CHANGE_WHITELISTED_ACCOUNT\r\n\r\n* Add new status - DIRECT_COMMIT_CHANGE_WHITELISTED_ACCOUNT\r\n\r\n* Audit- Dashboard review - Added block directCommitFailedValidation\r\n\r\n* Audit- Dashboard review - Added block directCommitFailedValidation\r\n\r\n* Audit- Dashboard review - Added block directCommitFailedValidation\r\n\r\n* Audit- Dashboard review - Added block directCommitFailedValidation",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/6a28bb6cef7b...09d42fce613f",
+        "committed_at": "2019-02-07T15:14:09Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "userTest",
+          "avatar_url": "https://0.gravatar.com/avatar/239f7e35dd16cdd97b38eb169d9cc0d0"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/176065399",
+          "@representation": "minimal",
+          "id": 176065399
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-02-07T15:24:08.514Z"
+    },
+    {
+      "@type": "build",
+      "@href": "/build/99850651",
+      "@representation": "standard",
+      "@permissions": {
+        "read": true,
+        "restart": true,
+        "cancel": true
+      },
+      "id": 99850651,
+      "number": "367",
+      "state": "passed",
+      "duration": 645,
+      "event_type": "push",
+      "previous_state": "passed",
+      "pull_request_title": null,
+      "pull_request_number": null,
+      "started_at": "2019-02-05T22:11:00Z",
+      "finished_at": "2019-02-05T22:21:45Z",
+      "private": false,
+      "repository": {
+        "@type": "repository",
+        "@href": "/repo/6642098",
+        "@representation": "minimal",
+        "id": 6642098,
+        "name": "Hygieia",
+        "slug": "Hygieia/Hygieia"
+      },
+      "branch": {
+        "@type": "branch",
+        "@href": "/repo/6642098/branch/master",
+        "@representation": "minimal",
+        "name": "master"
+      },
+      "tag": null,
+      "commit": {
+        "@type": "commit",
+        "@representation": "standard",
+        "id": 169475964,
+        "sha": "6a28bb6cef7b202108b77ffac26415828ade7a3e",
+        "ref": "refs/heads/master",
+        "message": "Adding support for native npm commands to build and serve (#2532)\n\n* Adding support for native npm commands to build and serve\r\n\r\n* do a bower install before gulp build\r\n\r\n* Allow UI to be built with the nodejs builder image\r\n\r\n* Hygieia Jenkins Plugin Enhancements - v2.1.6 (#2550)\r\n\r\n* Update the collector record if already existing else create a new one.\r\n\r\n* hygieia-publisher-enhancements\r\n\r\n* hygieia-publisher-enhancements\r\n\r\n* dependency cleanup\r\n\r\n* whitespace cleanup\r\n\r\n* code clean up and address review comments\r\n\r\n* cleanup of sout\r\n\r\n* address review comments w.r.t. manualcopy\r\n\r\n* PR for displaying Performance test on the UI (#2551)\r\n\r\n* Updated Display for Performance test\r\n\r\n* Updated with master",
+        "compare_url": "https://github.com/Hygieia/Hygieia/compare/98264f9267ec...6a28bb6cef7b",
+        "committed_at": "2019-02-05T22:10:30Z",
+        "committer": {
+          "name": "Doe Joe",
+          "avatar_url": "https://0.gravatar.com/avatar/0dd4220fc7d406bd2a0ae89a1b1d9c01"
+        },
+        "author": {
+          "name": "Doe Jane",
+          "avatar_url": "https://0.gravatar.com/avatar/c5537e4b2c46fd5c8e9000abc9de6a0a"
+        }
+      },
+      "jobs": [
+        {
+          "@type": "job",
+          "@href": "/job/175556412",
+          "@representation": "minimal",
+          "id": 175556412
+        }
+      ],
+      "stages": [],
+      "created_by": {
+        "@type": "user",
+        "@href": "/user/1088387",
+        "@representation": "minimal",
+        "id": 1088387,
+        "login": "rvema"
+      },
+      "updated_at": "2019-02-05T22:21:45.694Z"
+    }
+  ]
+}
