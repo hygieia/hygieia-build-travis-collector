@@ -1,0 +1,23 @@
+{
+  "_id" : "5c943ab6cd6ae6641aa410d3",
+  "_class" : "com.capitalone.dashboard.model.TravisBuildCollector",
+  "name" : "TravisCi",
+  "collectorType" : "Build",
+  "enabled" : true,
+  "online" : false,
+  "errors" : [],
+  "uniqueFields" : {
+    "jobName" : "",
+    "jobUrl" : ""
+  },
+  "allFields" : {
+    "jobName" : "",
+    "jobUrl" : "",
+    "instanceUrl" : ""
+  },
+  "lastExecuted" : 1553630691270,
+  "searchFields" : [
+    "description"
+  ],
+  "properties" : {}
+}

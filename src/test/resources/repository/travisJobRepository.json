@@ -1,0 +1,38 @@
+[
+  {
+    "id" : "5c943b6f8475bca335d6fbfa",
+    "_class" : "com.capitalone.dashboard.model.TravisJob",
+    "description" : "Hygieia/Hygieia/",
+    "niceName" : "TravisCi",
+    "enabled" : true,
+    "errors" : [],
+    "pushed" : false,
+    "collectorId" : "5c943ab6cd6ae6641aa410d3",
+    "lastUpdated" : 1553628572621,
+    "options" : {
+      "jobName" : "Hygieia/Hygieia/",
+      "jobUrl" : "https://travis-ci.com/Hygieia/Hygieia/",
+      "instanceUrl" : "travis-ci.com",
+      "branch" : "master",
+      "personalAccessToken" : ""
+    }
+  },
+  {
+    "id" : "5c943b6f8475bca335d6fbfb",
+    "_class" : "com.capitalone.dashboard.model.TravisJob",
+    "description" : "Hygieia/UI/",
+    "niceName" : "TravisCi",
+    "enabled" : false,
+    "errors" : [],
+    "pushed" : false,
+    "collectorId" : "5c943ab6cd6ae6641aa410d3",
+    "lastUpdated" : 1553628572621,
+    "options" : {
+      "jobName" : "Hygieia/UI/",
+      "jobUrl" : "https://travis-ci.com/Hygieia/UI/",
+      "instanceUrl" : "travis-ci.com",
+      "branch" : "master",
+      "personalAccessToken" : ""
+    }
+  }
+]
